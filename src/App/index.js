@@ -1,10 +1,11 @@
-import logo from './platzi.webp';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { CreateTodoButton } from './CreateTodoButton';
-import { TodoItem } from './TodoItem';
+
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
+import { TodoList } from '../TodoList';
+import { CreateTodoButton } from '../CreateTodoButton';
+import { TodoItem } from '../TodoItem/Index';
 import React from 'react'
+import {useLocalStorage} from './useLocalStorage'
 
 // const defaultTodos = [
 //   { text: 'Aprender JavaScript', completed: false },
@@ -21,20 +22,7 @@ import React from 'react'
 
 function App() {
 
-  const localStorageTodos = localStorage.getItem('TODOS_V1');
-  
-  let parcedTodos;
-  
-  if (!localStorageTodos) {
-    localStorage.setItem('TODOS_V1', JSON.stringify([]));
-    parcedTodos = [];
-  } else {
-
-    parcedTodos = JSON.parse(localStorageTodos);
-  }
-
-
-  const [todos, setTodos]= React.useState(parcedTodos)
+  const [todos, saveTodos]= useLocalStorage('TODOS_V1', [])
   const [searchValue, setSearchValue]= React.useState('');
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
@@ -46,12 +34,7 @@ function App() {
     return todoText.includes(searchText);
   });
 
-  const saveTodos = (newTodos) => {
-
-    localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
-
-    setTodos(newTodos);
-  };
+ 
 
   const completeTodo = (text) => {
     const newTodos = [...todos];
