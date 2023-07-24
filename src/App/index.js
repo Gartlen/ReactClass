@@ -12,7 +12,7 @@ import { AppUi } from './AppUI';
  
  
 //  localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
-//  localStorage.removeItem(''TODOS_V1)
+//  localStorage.removeItem('TODOS_V1')
 
 
 function App() {
