@@ -7,6 +7,7 @@ import { TodoItem } from '../TodoItem/Index';
 import React from 'react'
 import {useLocalStorage} from './useLocalStorage'
 
+//  localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 // const defaultTodos = [
 //   { text: 'Aprender JavaScript', completed: false },
 //   { text: 'Hacer una pagina web', completed: false },
@@ -16,7 +17,6 @@ import {useLocalStorage} from './useLocalStorage'
 // ];
  
  
-//  localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 //  localStorage.removeItem(''TODOS_V1)
 
 
