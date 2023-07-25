@@ -3,10 +3,15 @@ import './TodosLoading.css';
 
 function TodosLoading() {
   return (
-    <div className="LoadingTodo-container">
-      <span className="LoadingTodo-completeIcon"></span>
-      <p className="LoadingTodo-text"></p>
-      <span className="LoadingTodo-deleteIcon"></span>
+    <div className='loading_contenedor'> 
+      <div class="typing-indicator">
+        <div class="typing-circle"></div>
+        <div class="typing-circle"></div>
+        <div class="typing-circle"></div>
+        <div class="typing-shadow"></div>
+        <div class="typing-shadow"></div>
+        <div class="typing-shadow"></div>
+      </div>
     </div>
   );
 }
