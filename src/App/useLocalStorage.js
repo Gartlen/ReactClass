@@ -24,7 +24,7 @@ function useLocalStorage(itemName, initialValue) {
         }
   
         setLoading(false);
-        console.log('halalo menor');
+        // console.log('halalo menor');
       } catch(error){
         setLoading(false);
         setError(true);
