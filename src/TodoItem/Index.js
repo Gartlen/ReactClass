@@ -4,6 +4,7 @@ import './TodoItem.css';
 
 function TodoItem(props) {
   return (
+    <div className='TodoItem-Container'>
     <li className="TodoItem">
       <CompleteIcon
       completed={props.completed}
@@ -17,6 +18,7 @@ function TodoItem(props) {
     />
       
     </li>
+    </div>
   ); 
 }
 
