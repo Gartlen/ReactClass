@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactClass/static/css/main.e75cebf9.css",
+    "main.css": "/ReactClass/static/css/main.48cd2d14.css",
     "main.js": "/ReactClass/static/js/main.9562336d.js",
     "static/media/DeleteBlack.svg": "/ReactClass/static/media/DeleteBlack.80d526fee295f88c3ed2fe2ac0730e04.svg",
     "index.html": "/ReactClass/index.html",
     "static/media/CheckBlack.svg": "/ReactClass/static/media/CheckBlack.dfd813346db6afb4b2d3ff932abc2f09.svg",
-    "main.e75cebf9.css.map": "/ReactClass/static/css/main.e75cebf9.css.map",
+    "main.48cd2d14.css.map": "/ReactClass/static/css/main.48cd2d14.css.map",
     "main.9562336d.js.map": "/ReactClass/static/js/main.9562336d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e75cebf9.css",
+    "static/css/main.48cd2d14.css",
     "static/js/main.9562336d.js"
   ]
 }
